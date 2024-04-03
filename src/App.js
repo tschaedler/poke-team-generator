@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import CreatureCard from "./components/CreatureCard";
-import setdex from "./assets/sm_ou";
+// import setdex from "./assets/smogon-sets/sm_ou";
+import setdex from "./assets/smogon-sets/dpp_ou";
+// import setdex from "./assets/smogon-sets/dpp_uu";
+// import setdex from "./assets/smogon-sets/dpp_nu";
 import Button from "./components/Button";
 
 const bluePrintTeam = [
@@ -131,7 +134,7 @@ const App = () => {
 						Math.floor(Math.random() * randomSet.nature.length)
 				  ]
 				: randomSet.nature;
-		const lvl = randomNumber(1, 100);
+		const lvl = randomNumber(40, 50);
 
 		return { creatureName, lvl, ability, item, nature, attacks };
 	};
