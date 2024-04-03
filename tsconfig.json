@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"target": "es5",
+		"module": "commonjs",
+		"jsx": "react",
+		"strict": true
+	},
+	"files": ["globals.d.ts"],
+	"include": ["src/components"]
+}
